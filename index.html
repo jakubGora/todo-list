@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ToDo List</title>
+    <meta name="description" content="Opis strony" />
+    <meta charset="utf-8" />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="img/delivery-bike (1).ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body onload="getTodos()">
+    <header>
+      <h1>ToDo List</h1>
+    </header>
+
+    <div class="todo-container"></div>
+
+    <form>
+      <input type="text" class="todo-input-title" placeholder="Title" />
+      <input type="text" class="todo-input-desc" placeholder="Description" />
+      <button class="todo-button" type="submit">&#43;</button>
+      <label>Displey:</label>
+      <select name="todos" class="filter-todo">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="uncompleted">Uncompleted</option>
+      </select>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>
